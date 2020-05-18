@@ -1,0 +1,86 @@
+.quiz-container
+{
+    background-color: #F7F7F7;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    grid-template-rows: 3fr 1fr;
+    height: 100vh;
+    justify-content: space-between;
+    // align-items: center;
+    // justify-items: center;
+    gap: 25px 20px;
+    grid-template-areas:"boxM1 boxM2" "boxE1 boxE2";
+    // background-color: #F6F6F6;
+    background: linear-gradient(152deg, rgba(80,65,126,1) 29%, rgba(194,43,102,1) 84%, rgba(230,34,57,1) 100%);
+
+    // background: linear-gradient(142deg, rgba(208,160,182,0.8015405991498161) 0%, rgba(180,145,172,1) 40%, rgba(120,112,152,1) 84%, rgba(91,119,170,1) 100%); 
+}
+.q-num
+{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column-start: boxM1;
+    grid-column-end: boxM1;
+    grid-row-start: boxM1;
+    grid-row-end: boxE2;
+    padding: 30px;    
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 30px rgba(12, 12, 10, .3);
+    border-radius: 30px;
+    margin: 0 20px;
+    
+}
+.q-display
+{
+    grid-column-start: boxM2;
+    grid-column-end: boxM2;
+    grid-row-start: boxM2;
+    grid-row-end: boxM2;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-left: 50px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 30px rgba(12, 12, 10, .3);
+    margin-right: 100px;
+    border-radius: 30px;
+    .question
+    {
+        font-weight: 800;
+    }
+}
+.navigate
+{
+    grid-column-start: boxE2;
+    grid-column-end: boxE2;
+    grid-row-start: boxE2;
+    grid-row-end: boxE2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 5px 30px rgba(12, 12, 10, .3);
+    margin-right: 100px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.answers
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div
+    {
+        margin:7px 0;
+    }
+}

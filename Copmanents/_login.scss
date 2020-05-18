@@ -1,0 +1,78 @@
+.login
+{
+    background: rgb(80,65,126);
+    background: linear-gradient(152deg, rgba(80,65,126,1) 29%, rgba(194,43,102,1) 84%, rgba(230,34,57,1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    // background-image: url('../logo.png');
+    &__form{
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        border-radius: 15px;
+        padding: 35px;
+        background: linear-gradient(104deg, rgba(0,0,0,0.7601321778711485) 100%, rgba(43,44,45,0) 100%);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.7601321778711485);
+        justify-content: space-evenly;
+        height: 400px;
+        width: 400px;
+
+        input
+        {
+            width: 90%;
+        }
+    }
+    &__header
+    {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+
+    }
+    &__lbl
+    {
+        font-size: medium;
+    }
+    &__input__container
+    {
+        color: #fff;
+        border-bottom: 1px solid $primary-color;
+        font-weight: 500;
+        font-size: 1.1rem;
+        input
+        {
+         border: none;
+         padding: 10px;
+         margin-bottom: 10px;
+         outline: none;
+         background: transparent;
+         color: #fff;
+         font-size: 1rem;
+        }
+    }
+    &__btn
+    {
+        background-color: $primary-color;
+        border:none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 15px 25px;
+        border-radius: 10px;
+        min-width: 50px;
+        max-width: 100px;
+        align-self: center;
+        margin-top: 5px;        
+    }
+}
+.deactive
+{
+    display: none;
+}
+.wrong-entry
+{
+    visibility: hidden;
+}
